@@ -1,0 +1,152 @@
+.review-list-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-table th,
+.review-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.review-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.approve-button,
+.delete-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.approve-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.approve-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+
+.review-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.review-table th, .review-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.feature-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feature-button.featured {
+    background-color: #ff9800; /* Orange when featured */
+}
+
+.feature-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the button */
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+/* ReviewList.css */
+
+/* Style for the "Show More" / "Show Less" link */
+.toggle-link {
+    color: #007bff;  /* Blue color similar to a link */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.toggle-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+

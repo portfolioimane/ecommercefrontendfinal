@@ -1,0 +1,13 @@
+.checkbox-group {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center align items vertically */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px !important; /* Space between checkbox and label */
+    transform: scale(1.5) !important; /* Increase checkbox size */
+    cursor: pointer !important; /* Pointer cursor on hover */
+    accent-color: #007bff !important; /* Change checkbox color */
+    width: auto !important; /* Default width */
+    height: auto !important; /* Default height */
+}

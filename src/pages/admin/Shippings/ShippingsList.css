@@ -1,0 +1,64 @@
+/* ShippingsList.css */
+
+.heading {
+    font-size: 28px;
+    color: #DCAA2E; /* Golden color for heading */
+    margin-bottom: 20px;
+}
+
+.shipping-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.shipping-table th,
+.shipping-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.shipping-table th {
+    background-color: #f8f8f8; /* Light grey background for headers */
+}
+
+.status-button,
+.edit-button,
+.delete-button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    width: 100px; /* Uniform button size */
+}
+
+.status-button.activate {
+    background-color: #28a745; /* Green for Activate */
+    color: white;
+}
+
+.status-button.deactivate {
+    background-color: #dc3545; /* Red for Deactivate */
+    color: white;
+}
+
+.edit-button {
+    background-color: #007bff; /* Blue for Edit */
+    color: white;
+}
+
+.delete-button {
+    background-color: #ffc107; /* Yellow for Delete */
+    color: white;
+}
+
+.status-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}

@@ -1,0 +1,65 @@
+.coupon-edit-container {
+    max-width: 600px; /* Set a max width for better readability */
+    margin: 2rem auto; /* Center the form on the page */
+    padding: 2rem; /* Add padding inside the container */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.coupon-edit-title {
+    font-size: 1.8rem; /* Large title font */
+    margin-bottom: 1.5rem; /* Spacing below the title */
+    text-align: center; /* Center the title */
+    color: #333; /* Dark color for the title */
+}
+
+.coupon-edit-form {
+    display: flex;
+    flex-direction: column; /* Stack the form elements vertically */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Spacing between form groups */
+}
+
+.label {
+    font-weight: bold; /* Bold label */
+    margin-bottom: 0.5rem; /* Spacing below labels */
+    color: #555; /* Gray color for labels */
+}
+
+.form-control {
+    width: 100%; /* Full width for inputs */
+    padding: 0.75rem; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded input corners */
+    font-size: 1rem; /* Standard font size */
+    transition: border 0.2s; /* Transition effect for border */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.date-picker {
+    cursor: pointer; /* Change cursor for date picker */
+}
+
+.btn-submit {
+    padding: 0.8rem 1.5rem; /* Padding for the button */
+    background-color: #28a745 !important; /* Green button color */
+    color: #fff; /* White text on button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded button corners */
+    font-size: 1.1rem; /* Slightly larger font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.2s; /* Transition effect for background color */
+    margin-top: 1rem; /* Add spacing above the button */
+}
+
+.btn-submit:hover {
+    background-color: #218838; /* Darker green on hover */
+}

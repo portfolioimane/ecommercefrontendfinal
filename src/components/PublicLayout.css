@@ -1,0 +1,21 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
+.content {
+  flex: 1; /* This allows the content area to expand and push the footer down */
+  padding: 20px; /* Optional padding for content */
+  width: 100% !important; /* Optional padding for content */
+}
+
+footer {
+  background-color: #f8f9fa; /* Match your design */
+  text-align: center; /* Center the footer text */
+}
+
+footer .bg-custom{
+    background-color: #f8f9f0; /* Match your design */
+
+}

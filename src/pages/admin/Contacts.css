@@ -1,0 +1,22 @@
+/* src/components/Contacts.css */
+
+.contacts-page {
+    padding: 20px;
+}
+
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.contacts-table th,
+.contacts-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.contacts-table th {
+    background-color: #f4f4f4;
+}

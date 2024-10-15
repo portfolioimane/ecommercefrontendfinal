@@ -1,0 +1,22 @@
+.note-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0; /* Light grey background */
+    border-left: 5px solid #007bff; /* Blue left border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.note-container p {
+    color: #333; /* Dark grey text */
+    font-size: 14px; /* Slightly larger text for readability */
+    line-height: 1.6; /* Increased line spacing for better readability */
+}
+
+.note-container a {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underlined links */
+}
+
+.note-container a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

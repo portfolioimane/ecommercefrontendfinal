@@ -1,0 +1,189 @@
+.header-container {
+    width: 100%;
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+}
+
+.header-image {
+    position: relative; /* Required to position the overlay */
+    width: 100%;
+    margin: 0; /* Remove any margins */
+}
+
+.header-image::before {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    bottom: 0; /* Align it to the bottom */
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+    z-index: 1; /* Place it above the background image but below the text */
+}
+
+.header-title,
+.header-subtitle,
+.header-button {
+    position: relative; /* Position text elements above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+
+.header-title {
+    font-size: 2.5rem; /* Adjust title size as needed */
+    font-weight: bold; /* Make title bold */
+}
+
+.header-subtitle {
+    font-size: 1.25rem; /* Adjust subtitle size as needed */
+}
+
+.header-button {
+     background-color:#DAA520 !important;
+   border: none !important;
+
+    padding: 1.5rem 1.5rem; /* Button padding */
+    font-size: 1rem; /* Button text size */
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.header-button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
+.services {
+    background-color: #f8f9fa; /* Optional background for services */
+    padding: 2rem 0; /* Add padding for services */
+}
+
+.service-title {
+    font-size: 2rem; /* Service title size */
+}
+
+.icon-container {
+    flex: 1; /* Equal space for icons */
+    text-align: center; /* Center text */
+}
+
+.icon {
+    font-size: 3rem; /* Icon size */
+    margin-bottom: 1rem; /* Space below icon */
+    color:#DAA520;
+}
+
+.section-title {
+    font-size: 2.5rem; /* Section title size */
+    margin-bottom: 2rem; /* Margin below section title */
+}
+
+.whatsapp-icon {
+    position: fixed; /* Fix the position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #25D366; /* WhatsApp green */
+    color: white; /* Icon color */
+    border-radius: 50%; /* Make it circular */
+    padding: 10px; /* Padding around the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s; /* Transition for hover effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+
+
+.golden-button{
+   background-color:#DAA520 !important;
+   border: none !important;
+   padding:10px !important;
+
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333; /* Section title color */
+}
+
+.promotion-card {
+    border: none;
+    border-radius: 8px;
+    position: relative; /* Necessary for absolute positioning of content */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    margin-bottom:50px;
+}
+
+.promotion-image {
+    border-radius: 8px;
+}
+
+.promotion-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for a lighter overlay */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Rounded corners for content */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.promotion-content:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Darken on hover */
+}
+
+
+.promotion-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold; /* Add boldness to the title */
+}
+
+.promotion-description {
+    margin: 10px 0;
+    font-size: 1rem; /* Set a suitable font size */
+}
+
+.promotion-discount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.promotion-content h5, 
+.promotion-content p {
+    margin: 0; /* Reset margin for better alignment */
+}
+
+
+.testimonial-card {
+    width: 100%; /* Set the width to 30% */
+    margin: 0 15px; /* Optional: Adjust margin for spacing */
+}
+
+
+.subscribe-section {
+    padding: 20px;
+    background-color: #f8f9fa; /* Match your design */
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 2px solid #DAA520; /* Optional: adds a border to the avatar */
+}

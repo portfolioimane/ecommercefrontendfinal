@@ -1,0 +1,354 @@
+/* CheckoutPage.css */
+.checkout-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart-summary {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom:20px;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.item-quantity,
+.item-price {
+  margin: 5px 0;
+  color: #777;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Billing and Payment */
+.checkout-form {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none; /* Optional: Removes the default outline */
+}
+
+.payment-methods {
+  margin-top: 15px;
+}
+
+.payment-option {
+  margin-bottom: 15px;
+}
+
+.payment-option label {
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #333;
+}
+
+.payment-icon {
+  color: #ffcc00;
+  font-size: 1.2rem;
+}
+
+.order-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #e6b800;
+}
+
+
+/* Style for the checkout container */
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Cart summary section */
+.cart-summary {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.item-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-variant {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Color circle */
+.color-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+/* Adjust item spacing */
+.item-quantity, .item-price {
+  margin-top: 5px;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+.color-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+
+.coupon-section {
+  margin-bottom: 20px;
+}
+
+
+
+.apply-coupon-button {
+  padding: 10px 20px;
+  background-color: gold;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-coupon-button:hover {
+  background-color: darkgoldenrod;
+}
+
+.coupon-error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+.cart-summary {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px; /* Limit the width for better readability */
+}
+
+.cart-summary-title {
+  font-size: 1.5em; /* Larger title font size */
+  margin-bottom: 15px;
+  color: #333; /* Darker color for text */
+}
+
+.cart-item-list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.cart-item {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  border-bottom: 1px solid #eaeaea; /* Divider between items */
+  padding: 10px 0; /* Spacing around items */
+}
+
+.item-image {
+  width: 70px; /* Fixed width for consistency */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between image and text */
+  border-radius: 5px; /* Rounded image corners */
+}
+
+.item-details {
+  flex-grow: 1; /* Allow details to take available space */
+}
+
+.item-name {
+  font-weight: bold; /* Emphasize item name */
+  color: #444; /* Slightly lighter than title */
+}
+
+.item-variant {
+  font-size: 0.9em; /* Smaller font size for variants */
+  color: #666; /* Grey color for less emphasis */
+}
+
+.item-quantity, .item-price {
+  margin-top: 5px; /* Space between items */
+  color: #555; /* Slightly darker grey */
+}
+
+.summary-total,
+.summary-discount,
+.summary-final-total {
+  display: flex; /* Flex for alignment */
+  justify-content: space-between; /* Space between label and value */
+  margin-top: 10px; /* Space above summaries */
+  font-size: 1.1em; /* Slightly larger font size */
+  color: #333; /* Consistent text color */
+}
+
+.coupon-section {
+  margin-top: 20px; /* Space above coupon section */
+  display: block; /* Change from flex to block */
+}
+
+.coupon-input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Default border */
+  border-radius: 5px;
+  font-size: 1em;
+  min-width: 200px;
+  margin-bottom: 10px;
+  transition: none !important; /* Disable transitions for smoother control */
+}
+
+.coupon-input:hover {
+  border-color: #ccc !important; /* Ensure hover has no color change */
+}
+
+.coupon-input:focus {
+  border-color: #ccc !important; /* Keep the border color same on focus */
+  box-shadow: none !important;   /* Disable focus shadow */
+  outline: none !important;      /* Remove the default outline */
+}
+
+.coupon-button {
+  padding: 10px 15px; /* Padding for button */
+  background-color: #FFCC00; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+  white-space: nowrap; /* Prevent text wrapping */
+  display: block; /* Make button take full width */
+}
+
+.coupon-button:hover {
+  background-color: #FFCC00; /* Darker green on hover */
+}
+
+
