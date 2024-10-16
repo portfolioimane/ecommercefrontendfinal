@@ -16,6 +16,12 @@ const Footer = () => {
     instagram: '',
     tiktok: '',
   });
+  const [generalSettings, setGeneralSettings] = useState({
+    brand_name: 'E-Shop', // Default brand name
+    description: 'Your trusted online shop', // Default description
+  });
+   const [logo, setLogo] = useState(null); // State to hold logo URL
+
 
   useEffect(() => {
     const fetchContactInfo = async () => {
@@ -27,6 +33,24 @@ const Footer = () => {
       }
     };
 
+    const fetchGeneralSettings = async () => {
+      try {
+        const response = await axios.get('/api/admin/settings/general'); // Update the endpoint as necessary
+        setGeneralSettings(response.data);
+      } catch (error) {
+        console.error('Error fetching general settings:', error);
+      }
+    };
+
+    const fetchLogo = async () => {
+      try {
+        const response = await axios.get('/api/admin/customize/logos'); // Adjust the endpoint if necessary
+        setLogo(response.data.image_path ? `${process.env.REACT_APP_API_URL}/storage/${response.data.image_path}` : null); // Construct full URL if using Laravel storage
+      } catch (error) {
+        console.error('Error fetching logo:', error);
+      }
+    };
+
     const fetchSocialMediaLinks = async () => {
       try {
         const response = await axios.get('/api/admin/settings/social-media'); // Adjust the URL if needed
@@ -35,7 +59,9 @@ const Footer = () => {
         console.error('Error fetching social media links:', error);
       }
     };
-
+    
+    fetchLogo();
+    fetchGeneralSettings();
     fetchContactInfo();
     fetchSocialMediaLinks();
   }, []);
@@ -51,13 +77,26 @@ const Footer = () => {
       <div className="bg-dark text-white py-4">
         <Container>
           <Row>
-            <Col md={6}>
+            {/* Brand Name and Description Column */}
+            <Col md={4}>
+            {logo ? <img src={logo} alt="Logo" 
+            style={{ width:'110px', height: '60px' }} /> : 
+            generalSettings.brand_name} 
+
+           
+              <p>{generalSettings.description || 'Your trusted online shop'}</p>
+            </Col>
+
+            {/* Contact Info Column */}
+            <Col md={4}>
               <h5>Contact Us</h5>
               <p>{contactInfo.address || 'No address provided'}</p>
               <p>Email: {contactInfo.email || 'No email provided'}</p>
               <p>Phone: {contactInfo.phone || 'No phone number provided'}</p>
             </Col>
-            <Col md={6} className="text-center"> {/* Centering the content in this column */}
+
+            {/* Social Media Column */}
+            <Col md={4} className="text-center"> {/* Centering the content in this column */}
               <h5>Follow Us</h5>
               <div className="d-flex justify-content-center"> {/* Center the icons */}
                 {socialMediaLinks.facebook && (
@@ -87,7 +126,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div style={{ backgroundColor: '#343a40', color: '#ccc' }}> {/* Lighter background for copyright section */}
+      <div style={{ backgroundColor: '#34495E', color: '#ccc' }}> {/* Lighter background for copyright section */}
         <Container>
           <Row>
             <Col className="text-center">
