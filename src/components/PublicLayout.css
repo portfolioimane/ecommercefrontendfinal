@@ -19,3 +19,7 @@ footer .bg-custom{
     background-color: #f8f9f0; /* Match your design */
 
 }
+
+footer .bg-dark{
+  background-color:#2C3E50 !important;
+}
